@@ -1,8 +1,8 @@
 #include "optiLoader.h"
 
-image_t PROGMEM image_328 = {
-    {"adaboot_atmega328.hex"},
-    {"atmega328"},
+image_t PROGMEM image_EExER = {
+    {"PS80_EExER.hex},
+    {"attiny88"},
     0x950F,				/* Signature bytes for 328P */
     {0x3F, 0xFF, 0xDA, 0x05},            // pre program fuses (prot/lock, low, high, ext)
     {0x0F, 0x0, 0x0, 0x0},            // post program fuses
@@ -83,7 +83,7 @@ image_t PROGMEM image_328 = {
  * Table of defined images
  */
 image_t *images[] = {
-  &image_328,
+  &image_EExER,&image_ER		
 };
 
 uint8_t NUMIMAGES = sizeof(images)/sizeof(images[0]);
